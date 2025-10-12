@@ -1,4 +1,4 @@
-import type { HoaContext } from 'hoa'
+import type { HoaContext, HoaMiddleware } from 'hoa'
 
 export type RequestIdGenerator = (ctx: HoaContext) => string
 
@@ -8,8 +8,6 @@ export interface RequestIdOptions {
   generator?: RequestIdGenerator
 }
 
-export type RequestIdMiddleware = (ctx: HoaContext, next: () => Promise<void>) => Promise<void>
-
-export function requestId(options?: RequestIdOptions): RequestIdMiddleware
+export function requestId(options?: RequestIdOptions): HoaMiddleware
 
 export default requestId
