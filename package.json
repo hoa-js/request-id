@@ -1,6 +1,6 @@
 {
   "name": "@hoajs/request-id",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Request ID middleware for Hoa.",
   "main": "./dist/cjs/request-id.js",
   "type": "module",
